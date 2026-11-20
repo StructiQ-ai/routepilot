@@ -49,4 +49,5 @@ export {
   InMemoryEventBridge,
   DEFAULT_CONFIG,
   mergeConfig,
+  formatStepCounter,
 } from '@routepilot/engine';

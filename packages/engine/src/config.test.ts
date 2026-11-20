@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import {
   mergeConfig,
+  formatStepCounter,
   DEFAULT_CONFIG,
   type TourEngineConfig,
 } from './config';
@@ -96,5 +97,30 @@ describe('mergeConfig', () => {
     expect(result.highlight?.outlineClassName).toBe('my-class');
     expect(result.confetti?.scriptUrl).toBe('/my-confetti.js');
     expect(result.assistant?.loadingAnimation).toBe('pulse-ring');
+  });
+});
+
+describe('step counter label', () => {
+  it('defaults to English and keeps the other labels when only the counter is set', () => {
+    expect(mergeConfig().tooltip?.buttonLabels?.stepCounter).toBe('Step {current} of {total}');
+    const result = mergeConfig({ tooltip: { buttonLabels: { stepCounter: 'Schritt {current} von {total}' } } });
+    expect(result.tooltip?.buttonLabels?.stepCounter).toBe('Schritt {current} von {total}');
+    expect(result.tooltip?.buttonLabels?.next).toBe('Next');
+  });
+
+  it('fills the numbers into the template', () => {
+    expect(formatStepCounter('Schritt {current} von {total}', 3, 11)).toBe('Schritt 3 von 11');
+    expect(formatStepCounter('{current}/{total}', 1, 2)).toBe('1/2');
+    expect(formatStepCounter(undefined, 2, 5)).toBe('Step 2 of 5');
+    expect(formatStepCounter('', 2, 5)).toBe('Step 2 of 5');
+  });
+
+  it('shows a dash for a number that is not known yet', () => {
+    expect(formatStepCounter(undefined, 0, 0)).toBe('Step – of –');
+    expect(formatStepCounter('Schritt {current} von {total}', null, 4)).toBe('Schritt – von 4');
+  });
+
+  it('leaves a template without placeholders as it is', () => {
+    expect(formatStepCounter('Tour', 1, 2)).toBe('Tour');
   });
 });

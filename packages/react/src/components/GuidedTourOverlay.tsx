@@ -2,7 +2,7 @@ import { createElement, useCallback, useEffect, useMemo, useRef, useState, type 
 import { createPortal } from 'react-dom';
 import { useGuidedTour } from '../hooks/useGuidedTour';
 import { useTooltipSlots } from './TooltipSlotContext';
-import { startConfetti } from '@routepilot/engine';
+import { formatStepCounter, startConfetti } from '@routepilot/engine';
 import type {
   StepContent,
   StepDefinition,
@@ -1315,7 +1315,7 @@ const GuidedTourOverlay = (): JSX.Element | null => {
         <div className="tour-tooltip-footer gt-px-4 gt-py-3 gt-border-t gt-border-border/60 gt-flex gt-items-center gt-justify-between">
           {(config.tooltip?.showStepCounter !== false) && (
             <span className="tour-tooltip-counter gt-text-xs gt-text-muted-foreground">
-              Step {displayStepNumber > 0 ? displayStepNumber : '–'} of {totalSteps || '–'}
+              {formatStepCounter(labels.stepCounter, displayStepNumber, totalSteps)}
             </span>
           )}
           <div className="tour-tooltip-nav gt-flex gt-items-center gt-gap-2" style={{ marginLeft: 'auto' }}>

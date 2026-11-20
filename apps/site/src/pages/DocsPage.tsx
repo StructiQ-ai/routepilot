@@ -1675,6 +1675,7 @@ onEnter: (ctx) => {
         skip: 'Skip',
         finish: 'Finish',
         close: 'Close Tour',
+        stepCounter: 'Step {current} of {total}',
       },
     },
     backdrop: { opacity: 0.55 },
@@ -1697,6 +1698,7 @@ onEnter: (ctx) => {
           skip: 'Skip',
           finish: 'Finish',
           close: 'Close Tour',
+          stepCounter: 'Step {current} of {total}',
         },
       },
       backdrop: { opacity: 0.55 },
@@ -2289,6 +2291,7 @@ export const appConfig: ApplicationConfig = {
       finish: 'Done!',
       loading: 'Loading...',
       close: 'Exit',
+      stepCounter: 'Step {current} of {total}',  // e.g. 'Schritt {current} von {total}'
     },
   },
   backdrop: {

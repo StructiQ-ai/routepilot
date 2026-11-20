@@ -24,6 +24,7 @@ export {
   normalizePath,
   DEFAULT_CONFIG,
   mergeConfig,
+  formatStepCounter,
   startConfetti,
   setConfettiScriptUrl,
   buildDag,
