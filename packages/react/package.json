@@ -1,6 +1,6 @@
 {
   "name": "@routepilot/react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React bindings for RoutePilot — guided tour overlay, provider, and hooks.",
   "license": "MIT",
   "homepage": "https://routepilot.dev",
