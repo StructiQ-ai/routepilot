@@ -15,4 +15,4 @@ npm install @routepilot/engine @routepilot/react @routepilot/assistant @routepil
 ```
 
 Docs: https://routepilot.dev/docs#assistant
-Source: https://github.com/chrisfeldkircher/routepilot/tree/main/packages/assistant-react
+Source: https://github.com/StructiQ-ai/routepilot/tree/main/packages/assistant-react

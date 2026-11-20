@@ -14,4 +14,4 @@ npm install @routepilot/engine
 ```
 
 Docs: https://routepilot.dev/docs
-Source: https://github.com/chrisfeldkircher/routepilot/tree/main/packages/engine
+Source: https://github.com/StructiQ-ai/routepilot/tree/main/packages/engine

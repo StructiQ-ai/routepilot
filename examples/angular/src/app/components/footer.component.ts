@@ -29,7 +29,7 @@ import { RouterLink } from '@angular/router';
           </a>
           <a
             class="site-footer-link"
-            href="https://github.com/chrisfeldkircher/routepilot"
+            href="https://github.com/StructiQ-ai/routepilot"
             target="_blank"
             rel="noopener noreferrer"
           >

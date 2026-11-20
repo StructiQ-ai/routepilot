@@ -49,7 +49,7 @@ export function Hero() {
             <span className="material-symbols-outlined">arrow_forward</span>
           </Link>
           <a
-            href="https://github.com/chrisfeldkircher/routepilot"
+            href="https://github.com/StructiQ-ai/routepilot"
             target="_blank"
             rel="noopener noreferrer"
             className="github-star-btn px-5 py-2.5 sm:px-8 sm:py-3.5 rounded-md font-headline font-bold text-sm sm:text-lg border border-outline-variant/30 hover:bg-surface-container transition-all flex items-center gap-2"
