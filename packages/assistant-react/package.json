@@ -1,6 +1,6 @@
 {
   "name": "@routepilot/assistant-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React bindings for @routepilot/assistant — <TourAssistantButton/> and <TourAssistantPrompt/> components that render inside the @routepilot/react tour tooltip footer.",
   "license": "MIT",
   "homepage": "https://routepilot.dev",

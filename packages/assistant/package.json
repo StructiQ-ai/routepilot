@@ -1,6 +1,6 @@
 {
   "name": "@routepilot/assistant",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "In-browser retrieval core for @routepilot/engine — maps free-text questions to the tour step that answers them. Framework-agnostic (BM25 + tokenizer + types). Pair with @routepilot/assistant-react or @routepilot/assistant-angular for UI.",
   "license": "MIT",
   "homepage": "https://routepilot.dev",

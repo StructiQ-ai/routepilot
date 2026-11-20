@@ -19,6 +19,7 @@ export type { TourNavigationAdapter, RouteMode, RoutePolicy } from './navigation
 export {
   DEFAULT_CONFIG,
   mergeConfig,
+  formatStepCounter,
 } from './config';
 export type {
   TourAssistantConfig,

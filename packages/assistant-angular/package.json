@@ -1,6 +1,6 @@
 {
   "name": "@routepilot/assistant-angular",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Angular bindings for @routepilot/assistant — robot button + prompt bar that render inside the @routepilot/angular tour tooltip footer.",
   "license": "MIT",
   "homepage": "https://routepilot.dev",

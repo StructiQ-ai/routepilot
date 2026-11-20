@@ -1,6 +1,6 @@
 {
   "name": "@routepilot/engine",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framework-agnostic guided tour engine — state machine, DAG navigation, preparation lifecycle.",
   "license": "MIT",
   "homepage": "https://routepilot.dev",
