@@ -22,7 +22,7 @@ export function Footer() {
           </Link>
           <a
             className="text-slate-500 font-body text-xs hover:text-primary transition-colors"
-            href="https://github.com/chrisfeldkircher/routepilot"
+            href="https://github.com/StructiQ-ai/routepilot"
             target="_blank"
             rel="noopener noreferrer"
           >

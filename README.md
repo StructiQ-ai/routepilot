@@ -2,9 +2,9 @@
 
 **A zero-intrusion guided tour engine for the web.**
 
-[![CI](https://github.com/chrisfeldkircher/routepilot/actions/workflows/ci.yml/badge.svg)](https://github.com/chrisfeldkircher/routepilot/actions/workflows/ci.yml)
+[![CI](https://github.com/StructiQ-ai/routepilot/actions/workflows/ci.yml/badge.svg)](https://github.com/StructiQ-ai/routepilot/actions/workflows/ci.yml)
 [![Documentation](https://img.shields.io/badge/docs-routepilot.dev%2Fdocs-7c8cff?style=flat-square)](https://routepilot.dev/docs)
-[![Angular Example](https://img.shields.io/badge/example-angular-0f6cbd?style=flat-square)](https://github.com/chrisfeldkircher/routepilot/tree/main/examples/angular)
+[![Angular Example](https://img.shields.io/badge/example-angular-0f6cbd?style=flat-square)](https://github.com/StructiQ-ai/routepilot/tree/main/examples/angular)
 [![npm engine](https://img.shields.io/npm/v/%40routepilot%2Fengine?label=engine&style=flat-square&color=cb3837)](https://www.npmjs.com/package/@routepilot/engine)
 [![npm react](https://img.shields.io/npm/v/%40routepilot%2Freact?label=react&style=flat-square&color=61dafb)](https://www.npmjs.com/package/@routepilot/react)
 [![npm angular](https://img.shields.io/npm/v/%40routepilot%2Fangular?label=angular&style=flat-square&color=dd0031)](https://www.npmjs.com/package/@routepilot/angular)
@@ -30,9 +30,9 @@ routePilot runs as a pure overlay. It observes your UI through CSS selectors, ma
 The canonical documentation lives here:
 
 - **Docs:** [routepilot.dev/docs](https://routepilot.dev/docs)
-- **Angular example:** [examples/angular](https://github.com/chrisfeldkircher/routepilot/tree/main/examples/angular)
-- **Website/docs source:** [apps/site](https://github.com/chrisfeldkircher/routepilot/tree/main/apps/site)
-- **Live demo source:** [apps/demo](https://github.com/chrisfeldkircher/routepilot/tree/main/apps/demo)
+- **Angular example:** [examples/angular](https://github.com/StructiQ-ai/routepilot/tree/main/examples/angular)
+- **Website/docs source:** [apps/site](https://github.com/StructiQ-ai/routepilot/tree/main/apps/site)
+- **Live demo source:** [apps/demo](https://github.com/StructiQ-ai/routepilot/tree/main/apps/demo)
 
 ## Framework Support
 
@@ -236,10 +236,10 @@ For full setup guides, API reference, bridge wiring, and framework-specific exam
 
 ## Examples
 
-- Angular example app: [`examples/angular`](https://github.com/chrisfeldkircher/routepilot/tree/main/examples/angular)
-- Angular tours folder: [`examples/angular/src/app/tours`](https://github.com/chrisfeldkircher/routepilot/tree/main/examples/angular/src/app/tours)
-- Website and docs source: [`apps/site`](https://github.com/chrisfeldkircher/routepilot/tree/main/apps/site)
-- Live demo app source: [`apps/demo`](https://github.com/chrisfeldkircher/routepilot/tree/main/apps/demo)
+- Angular example app: [`examples/angular`](https://github.com/StructiQ-ai/routepilot/tree/main/examples/angular)
+- Angular tours folder: [`examples/angular/src/app/tours`](https://github.com/StructiQ-ai/routepilot/tree/main/examples/angular/src/app/tours)
+- Website and docs source: [`apps/site`](https://github.com/StructiQ-ai/routepilot/tree/main/apps/site)
+- Live demo app source: [`apps/demo`](https://github.com/StructiQ-ai/routepilot/tree/main/apps/demo)
 
 ## Project Structure
 

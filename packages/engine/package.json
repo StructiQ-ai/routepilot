@@ -5,11 +5,11 @@
   "license": "MIT",
   "homepage": "https://routepilot.dev",
   "bugs": {
-    "url": "https://github.com/chrisfeldkircher/routepilot/issues"
+    "url": "https://github.com/StructiQ-ai/routepilot/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chrisfeldkircher/routepilot.git",
+    "url": "git+https://github.com/StructiQ-ai/routepilot.git",
     "directory": "packages/engine"
   },
   "keywords": [

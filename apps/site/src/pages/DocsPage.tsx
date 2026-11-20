@@ -4,7 +4,7 @@ import { Footer } from '../components/Footer';
 
 type Framework = 'react' | 'angular';
 const DEFAULT_FRAMEWORK: Framework = 'react';
-const GITHUB_REPO_URL = 'https://github.com/chrisfeldkircher/routepilot';
+const GITHUB_REPO_URL = 'https://github.com/StructiQ-ai/routepilot';
 const ANGULAR_EXAMPLE_URL = `${GITHUB_REPO_URL}/tree/main/examples/angular`;
 const ANGULAR_TOURS_URL = `${ANGULAR_EXAMPLE_URL}/src/app/tours`;
 

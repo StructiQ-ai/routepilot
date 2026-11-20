@@ -21,4 +21,4 @@ Pair with the binding for your stack:
 - Angular: [`@routepilot/assistant-angular`](https://www.npmjs.com/package/@routepilot/assistant-angular)
 
 Docs: https://routepilot.dev/docs#assistant
-Source: https://github.com/chrisfeldkircher/routepilot/tree/main/packages/assistant
+Source: https://github.com/StructiQ-ai/routepilot/tree/main/packages/assistant

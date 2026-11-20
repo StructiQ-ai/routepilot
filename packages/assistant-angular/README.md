@@ -21,4 +21,4 @@ Import the shared CSS once in your app (e.g. `styles.scss`):
 ```
 
 Docs: https://routepilot.dev/docs#assistant
-Source: https://github.com/chrisfeldkircher/routepilot/tree/main/packages/assistant-angular
+Source: https://github.com/StructiQ-ai/routepilot/tree/main/packages/assistant-angular
