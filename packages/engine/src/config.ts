@@ -19,6 +19,12 @@ export interface TourTooltipConfig {
     finish?: string;
     loading?: string;
     close?: string;
+    /**
+     * Text of the step counter, with `{current}` and `{total}` replaced by
+     * the numbers (e.g. `'Schritt {current} von {total}'`).
+     * Defaults to `'Step {current} of {total}'`.
+     */
+    stepCounter?: string;
   };
   /** Show "Step X of Y" counter. */
   showStepCounter?: boolean;
@@ -67,6 +73,8 @@ export interface TourEngineConfig {
   assistant?: TourAssistantConfig;
 }
 
+const DEFAULT_STEP_COUNTER = 'Step {current} of {total}';
+
 export const DEFAULT_CONFIG: TourEngineConfig = {
   tooltip: {
     defaultWidth: 360,
@@ -78,6 +86,7 @@ export const DEFAULT_CONFIG: TourEngineConfig = {
       finish: 'Finish',
       loading: 'Loading...',
       close: 'Close Tour',
+      stepCounter: DEFAULT_STEP_COUNTER,
     },
     showStepCounter: true,
     placementStrategy: 'auto',
@@ -98,6 +107,21 @@ export const DEFAULT_CONFIG: TourEngineConfig = {
   assistant: {
     loadingAnimation: 'random',
   },
+};
+
+/**
+ * The step counter's text from its template: `{current}` and `{total}` are
+ * replaced by the numbers, or by an en dash while one is not known yet.
+ */
+export const formatStepCounter = (
+  template: string | undefined,
+  current: number | null | undefined,
+  total: number | null | undefined,
+): string => {
+  const shown = (n: number | null | undefined) => (typeof n === 'number' && n > 0 ? String(n) : '–');
+  return (template || DEFAULT_STEP_COUNTER)
+    .split('{current}').join(shown(current))
+    .split('{total}').join(shown(total));
 };
 
 export const mergeConfig = (user?: TourEngineConfig): TourEngineConfig => {

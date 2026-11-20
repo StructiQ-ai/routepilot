@@ -11,7 +11,7 @@ import {
 import { CommonModule } from '@angular/common';
 import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
-import { startConfetti } from '@routepilot/engine';
+import { formatStepCounter, startConfetti } from '@routepilot/engine';
 import type {
   StepDefinition,
   StepContent,
@@ -268,8 +268,7 @@ import {
               *ngIf="showStepCounter"
               class="tour-tooltip-counter gt-text-xs gt-text-muted-foreground"
             >
-              Step {{ displayStepNumber > 0 ? displayStepNumber : '–' }}
-              of {{ totalSteps || '–' }}
+              {{ stepCounterText }}
             </span>
             <div
               class="tour-tooltip-nav gt-flex gt-items-center gt-gap-2"
@@ -349,6 +348,7 @@ export class GuidedTourOverlayComponent implements OnInit, AfterViewInit, OnDest
   isTransitioning = false;
   showBranchChooser = false;
   showStepCounter = true;
+  stepCounterText = '';
   tooltipClassName = 'tour-tooltip gt-rounded-lg gt-border gt-border-border gt-pointer-events-auto';
 
   labels: Record<string, string | undefined> = {};
@@ -460,6 +460,7 @@ export class GuidedTourOverlayComponent implements OnInit, AfterViewInit, OnDest
       : -1;
     this.totalSteps = s.dag?.totalSteps ?? this.orderedNodes.length;
     this.displayStepNumber = idx >= 0 ? idx + 1 : 0;
+    this.stepCounterText = formatStepCounter(this.labels.stepCounter, this.displayStepNumber, this.totalSteps);
 
     this.canGoBack = s.canGoBack;
     this.canGoNext = s.canGoNext;
